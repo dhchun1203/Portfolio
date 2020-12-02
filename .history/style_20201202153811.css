@@ -1,0 +1,14 @@
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.navbar__btn button {
+	border-style: none;
+	background: none;
+}
+.navbar__btn button :hover {
+	border-style: solid;
+	border-color: white;
+	border-radius: 4px;
+}

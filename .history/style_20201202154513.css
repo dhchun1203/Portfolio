@@ -1,0 +1,22 @@
+body {
+	width: 100%;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.navbar__logo {
+	display: flex;
+	flex-direction: row;
+}
+.navbar__btn button {
+	border-style: none;
+	background: none;
+}
