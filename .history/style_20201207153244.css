@@ -51,12 +51,4 @@ h3 {
 	font-size: var(--font-regular);
 	font-weight: var(--font-regular);
 	color: var(--color-black);
-	margin: 8px 0;
-}
-
-p {
-	font-size: var(--font-regular);
-	font-weight: var(--font-regular);
-	color: var(--color-black);
-	margin: 4px 0;
 }

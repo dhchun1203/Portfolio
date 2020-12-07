@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hwan's Portfolio</title>
+		<meta
+			name="description"
+			content="portfolio for world-renowned software engineer Hwan"
+		/>
+		<meta name="author" content="Hwan" />
+		<link rel="icon" type="image/png" href="imgs/favicon.png" />
+		<script
+			src="https://kit.fontawesome.com/8b98a99811.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<h1>Heading</h1>
+		<h2>Heading</h2>
+		<!-- Navbar -->
+		<nav id="navbar">
+			<div class="navbar__logo">
+				<i class="fab fa-diaspora"></i>
+				<a href="#">Hwan</a>
+			</div>
+			<div class="navbar__menu">
+				<ul class="navbar__menu">
+					<li class="navbar__menu__item">Home</li>
+					<li class="navbar__menu__item">About</li>
+					<li class="navbar__menu__item">Skills</li>
+					<li class="navbar__menu__item">My work</li>
+					<li class="navbar__menu__item">Testimonial</li>
+					<li class="navbar__menu__item">Contact</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Home -->
+		<section id="home">
+			<img class="home__avatar" src="imgs/profile.jpg" alt="profile" />
+
+			<h1 class="home__title">Hello, <br />Let me introduce myself!</h1>
+
+			<h2 class="home__description">
+				A frontend Developer currently residing in Yongin, South Korea.
+			</h2>
+			<button class="home__contact">CONTACT ME</button>
+		</section>
+		<!-- About -->
+		<!-- modify BEM naming and add images, icons -->
+		<section id="about">
+			<h1>About me</h1>
+			<p>
+				자기소개 Lorem Ipsum is simply dummy text of the printing and
+				typesetting industry. Lorem Ipsum has been the industry's standard dummy
+				text ever since the 1500s, when an unknown printer took a galley of type
+				and scrambled it to make a type specimen book. It has survived not only
+				five centuries, but also the leap into electronic typesetting, remaining
+				essentially unchanged. It was popularised in the 1960s with the release
+				of Letraset sheets containing Lorem Ipsum passages, and more recently
+				with desktop publishing software like Aldus PageMaker including versions
+				of Lorem Ipsum.
+			</p>
+			<div class="about__majors">
+				<div class="major">
+					<div class="major__icon"><i class="fab fa-html5"></i></div>
+					<div class="major__title">HTML</div>
+					<div class="major__description">html</div>
+				</div>
+				<div class="major">
+					<div class="major__icon"><i class="fab fa-css3-alt"></i></div>
+					<div class="major__title">CSS</div>
+					<div class="major__description">css</div>
+				</div>
+				<div class="major">
+					<div class="major__icon"><i class="fab fa-js"></i></div>
+					<div class="major__title">JavaScript</div>
+					<div class="major__description">javascript</div>
+				</div>
+			</div>
+			<!-- <div class="about__spec">
+				<div class="about__spec__item">
+					<img src="" alt="HtmlImage" />
+					<h3>HTML</h3>
+					<p>html</p>
+				</div>
+				<div class="about__spec__item">
+					<img src="" alt="CssImage" />
+					<h3>CSS</h3>
+					<p>css</p>
+				</div>
+				<div class="about__spec__item">
+					<img src="" alt="JavaScriptImage" />
+					<h3>JavaScript</h3>
+					<p>javascript</p>
+				</div>
+			</div> -->
+			<div class="about__jobs">
+				<div class="job">
+					<img
+						src="imgs/jobs/nciaedu_logo.png"
+						alt="ncia logo"
+						class="job__logo"
+					/>
+					<p class="job__name">blablalbla</p>
+					<p class="job__period">2017-2018</p>
+				</div>
+				<div class="job">
+					<img
+						src="imgs/jobs/nciaedu_logo.png"
+						alt="ncia logo"
+						class="job__logo"
+					/>
+					<p class="job__name">blablalbla</p>
+					<p class="job__period">2017-2018</p>
+				</div>
+			</div>
+			<!-- <div class="career">
+				<div class="career__item">
+					<img class="career__image" src="" alt="career image" />
+					<p>what's my career</p>
+				</div>
+				<div class="career__item">
+					<img class="career__image" src="" alt="career image" />
+					<p>what's my career</p>
+				</div>
+			</div> -->
+		</section>
+		<!-- Skills -->
+		<!-- modify BEM naming and change some tags more approriately -->
+		<!-- <section id="skills">
+			<h2 class="skills__title">Skills</h2>
+			<h3 class="skills__subTitle">Skills & Attributes</h3>
+			<p class="skills__description">
+				Experience with all phases of the software life-cycle. Passion for
+				learning new technologies. Capable of working within a team enviroment
+				and independently. Ability to plan and time schedule, work under strict
+				time pressure and adapt quickly when needed.
+			</p>
+			<div class="skills__summary">
+				<div class="skills__summary__box">
+					<h4 class="skills__summary__title">Skills</h4>
+					<div class="skills__summary__content">
+						<div class="skills__summary__skill">
+							<div class="skill__header">
+								<h5>HTML</h5>
+								<h5>percentage</h5>
+							</div>
+							<div class="skill__percentageBar"></div>
+						</div>
+						<div class="skills__summary__skill">
+							<div class="skill__header">
+								<h5>CSS</h5>
+								<h5>percentage</h5>
+							</div>
+							<div class="skill__percentageBar"></div>
+						</div>
+						<div class="skills__summary__skill">
+							<div class="skill__header">
+								<h5>JAVASCRIPT</h5>
+								<h5>percentage</h5>
+							</div>
+							<div class="skill__percentageBar"></div>
+						</div>
+						<div class="skills__summary__skill">
+							<div class="skill__header">
+								<h5>TYPESCRIPT</h5>
+								<h5>percentage</h5>
+							</div>
+							<div class="skill__percentageBar"></div>
+						</div>
+						<div class="skills__summary__skill">
+							<div class="skill__header">
+								<h5>REACT</h5>
+								<h5>percentage</h5>
+							</div>
+							<div class="skill__percentageBar"></div>
+						</div>
+						<div class="skills__summary__skill">
+							<div class="skill__header">
+								<h5>NODEJS</h5>
+								<h5>percentage</h5>
+							</div>
+							<div class="skill__percentageBar"></div>
+						</div>
+					</div>
+				</div>
+				<div class="skills__summary__secondBox">
+					<div class="skills__summary__box">
+						<h4 class="skills__summary__title">Tools</h4>
+						<ul class="skills__summary__content">
+							<li><h5>Visual Studio</h5></li>
+							<li><h5>Eclipse</h5></li>
+							<li><h5>Team Foundation Server</h5></li>
+							<li><h5>etc..</h5></li>
+							<li><h5>etc..</h5></li>
+						</ul>
+					</div>
+					<div class="skills__summary__box">
+						<h4 class="skills__summary__title">Etc</h4>
+						<h5>Git</h5>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<section id="skills">
+			<h1>Skills</h1>
+			<h2>Skills & Attributes</h2>
+			<p>
+				Experience with all phases of the software life-cycle. Passion for
+				learning new technologies. Capable of working within a team enviroment
+				and independently. Ability to plan and time schedule, work under strict
+				time pressure and adapt quickly when needed.
+			</p>
+			<div class="skillset">
+				<div class="skillset__left">
+					<h3 class="skillset__title">Skills</h3>
+					<div class="skill">
+						<div class="skill_description">
+							<span>HTML</span>
+							<span>99%</span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill_description">
+							<span>CSS</span>
+							<span>80%</span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill_description">
+							<span>JavaScript</span>
+							<span>90%</span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill_description">
+							<span>TypeScript</span>
+							<span>80%</span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill_description">
+							<span>React</span>
+							<span>80%</span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value"></div>
+						</div>
+					</div>
+				</div>
+				<div class="skillset__right">
+					<h3 class="skillset__title">Tools</h3>
+					<ul class="tools__list">
+						<li><span>Visual Studio Code</span></li>
+						<li><span>Eclipse</span></li>
+						<li><span>Team Foundation Server</span></li>
+						<li><span>etc..</span></li>
+						<li><span>etc..</span></li>
+					</ul>
+					<h3 class="skillset__title">Etc</h3>
+					<ul class="etc__list">
+						<li><span>Git</span></li>
+					</ul>
+					<ul class="etc__list">
+						<li><span>Slack</span></li>
+					</ul>
+					<ul class="etc__list">
+						<li><span>etc..</span></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- My work -->
+		<!-- modify BEM naming and add projects images and add work__projects div-->
+		<!-- <section id="myWork">
+
+			<h2 class="myWork__title">My work</h2>
+			<h3 class="myWork__subTitle">Projects</h3>
+			<div class="myWork__menu">
+				<button class="myWork__menu__btn">All</button>
+				<button class="myWork__menu__btn">Front-end</button>
+				<button class="myWork__menu__btn">Back-end</button>
+				<button class="myWork__menu__btn">Mobile</button>
+			</div>
+			<div class="myWork__displayItems"></div>
+		</section> -->
+		<section id="work">
+			<h1>My work</h1>
+			<h3>Projects</h3>
+			<div class="work__categories">
+				<button class="category__btn">
+					All<span class="category__count">8</span>
+				</button>
+				<button class="category__btn">
+					Front-end<span class="category__count">3</span>
+				</button>
+				<button class="category__btn">
+					Back-end<span class="category__count">3</span>
+				</button>
+				<button class="category__btn">
+					Mobile<span class="category__count">2</span>
+				</button>
+			</div>
+
+			<div class="work__projects">
+				<a
+					href="https://github.com/dhchun1203/DreamCoding_youtube-project"
+					class="project"
+					target="blank"
+				></a>
+				<img
+					src="imgs/projects/project1.png"
+					alt="youtube project thumbnail"
+					class="project__img"
+				/>
+				<div class="project__description">
+					<!--마우스를 올렸을 때 표시될 내용-->
+					<h3>Youtube Site</h3>
+					<span>Clone coding with HTML and CSS</span>
+				</div>
+				<a
+					href="https://github.com/dhchun1203/DreamCoding_youtube-project"
+					class="project"
+					target="blank"
+				></a>
+				<img
+					src="imgs/projects/project2.png"
+					alt="youtube project thumbnail"
+					class="project__img"
+				/>
+				<div class="project__description">
+					<h3>Youtube Site</h3>
+					<span>Clone coding with HTML and CSS</span>
+				</div>
+				<a
+					href="https://github.com/dhchun1203/DreamCoding_youtube-project"
+					class="project"
+					target="blank"
+				></a>
+				<img
+					src="imgs/projects/project3.png"
+					alt="youtube project thumbnail"
+					class="project__img"
+				/>
+				<div class="project__description">
+					<h3>Youtube Site</h3>
+					<span>Clone coding with HTML and CSS</span>
+				</div>
+				<a
+					href="https://github.com/dhchun1203/DreamCoding_youtube-project"
+					class="project"
+					target="blank"
+				></a>
+				<img
+					src="imgs/projects/project4.png"
+					alt="youtube project thumbnail"
+					class="project__img"
+				/>
+				<div class="project__description">
+					<h3>Youtube Site</h3>
+					<span>Clone coding with HTML and CSS</span>
+				</div>
+				<a
+					href="https://github.com/dhchun1203/DreamCoding_youtube-project"
+					class="project"
+					target="blank"
+				></a>
+				<img
+					src="imgs/projects/project5.png"
+					alt="youtube project thumbnail"
+					class="project__img"
+				/>
+				<div class="project__description">
+					<h3>Youtube Site</h3>
+					<span>Clone coding with HTML and CSS</span>
+				</div>
+				<a
+					href="https://github.com/dhchun1203/DreamCoding_youtube-project"
+					class="project"
+					target="blank"
+				></a>
+				<img
+					src="imgs/projects/project6.png"
+					alt="youtube project thumbnail"
+					class="project__img"
+				/>
+				<div class="project__description">
+					<h3>Youtube Site</h3>
+					<span>Clone coding with HTML and CSS</span>
+				</div>
+				<a
+					href="https://github.com/dhchun1203/DreamCoding_youtube-project"
+					class="project"
+					target="blank"
+				></a>
+				<img
+					src="imgs/projects/project7.png"
+					alt="youtube project thumbnail"
+					class="project__img"
+				/>
+				<div class="project__description">
+					<h3>Youtube Site</h3>
+					<span>Clone coding with HTML and CSS</span>
+				</div>
+				<a
+					href="https://github.com/dhchun1203/DreamCoding_youtube-project"
+					class="project"
+					target="blank"
+				></a>
+				<img
+					src="imgs/projects/project8.png"
+					alt="youtube project thumbnail"
+					class="project__img"
+				/>
+				<div class="project__description">
+					<h3>Youtube Site</h3>
+					<span>Clone coding with HTML and CSS</span>
+				</div>
+			</div>
+		</section>
+		<!-- Testimonial -->
+		<!-- modify BEM naming and add testimonial images -->
+		<!-- <section id="testimonial">
+			<h2 class="testimonial__title">Testimonials</h2>
+			<h3 class="testimonial__subTitle">See what they say about me</h3>
+			<div class="testimonial__content">
+				<div class="testimonial__content__item">
+					<img src="" alt="profile image" class="testimonial__avatar" />
+					<div class="testimonial__mention">
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of
+							type and scrambled it to make a type specimen book. It has
+							survived not only five centuries, but also the leap into
+							electronic typesetting, remaining essentially unchanged.
+						</p>
+						<p><strong>Hwan</strong> / TigerSpike</p>
+					</div>
+				</div>
+				<div class="testimonial__content__item">
+					<img src="" alt="profile image" class="testimonial__avatar" />
+					<div class="testimonial__mention">
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of
+							type and scrambled it to make a type specimen book. It has
+							survived not only five centuries, but also the leap into
+							electronic typesetting, remaining essentially unchanged.
+						</p>
+						<p><strong>Hwan</strong> / TigerSpike</p>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<section id="testimonial">
+			<h1>Testimonials</h1>
+			<h3>See what they say about me</h3>
+			<div class="testimonials">
+				<div class="testimonial">
+					<img
+						src="imgs/testimonial/people1.jpg"
+						alt="People"
+						class="testimonial__avatar"
+					/>
+					<div class="testimonial__speech-bubble">
+						<p>
+							Lorem Ipsum has been the industry's standard dummy text ever since
+							the 1500s, when an unknown printer took a galley of type and
+							scrambled it to make a type specimen book. It has survived not
+							only five centuries, but also the leap into electronic
+							typesetting, remaining essentially unchanged.
+						</p>
+						<p class="name"><a href="">Sung jin</a> / Samsung</p>
+					</div>
+				</div>
+				<div class="testimonial">
+					<img
+						src="imgs/testimonial/people1.jpg"
+						alt="People"
+						class="testimonial__avatar"
+					/>
+					<div class="testimonial__speech-bubble">
+						<p>
+							Lorem Ipsum has been the industry's standard dummy text ever since
+							the 1500s, when an unknown printer took a galley of type and
+							scrambled it to make a type specimen book. It has survived not
+							only five centuries, but also the leap into electronic
+							typesetting, remaining essentially unchanged.
+						</p>
+						<p class="name"><a href="">Sung jin</a> / Samsung</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Contact -->
+		<!-- modify BEM naming and add .contact__links -->
+		<!-- <footer id="contact">
+			<h2 class="contact__title">Let's talk</h2>
+			<h3 class="contact__email">dhchun1203@gmail.com</h3>
+			<div class="contact__socialMediaIcon">
+				<i class=""></i>
+				<i class=""></i>
+			</div>
+			<p class="contact__copyRight">
+				2020 Dream Coding Hwan - All right reserved
+			</p>
+		</footer> -->
+		<section id="contact">
+			<h1 class="contact__title">Let's talk</h1>
+			<h2 class="contact__email">dhchun1203@gmil.com</h2>
+			<div class="contact__links">
+				<a href="https://github.com/dhchun1203">
+					<i class="fab fa-github"></i>
+				</a>
+				<a href="https://www.facebook.com/profile.php?id=100010406657545">
+					<i class="fab fa-facebook"></i>
+				</a>
+			</div>
+			<p class="contact__rights">
+				2020 Dream Coding Hwan - All rights reserved
+			</p>
+		</section>
+	</body>
+</html>
