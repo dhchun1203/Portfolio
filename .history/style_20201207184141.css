@@ -132,7 +132,6 @@ p {
 	color: var(--color-white);
 }
 .home__contact {
-	color: var(--color-white);
 	font-size: var(--font-regular);
 	font-weight: var(--weight-bold);
 	margin: 24px;
