@@ -87,6 +87,7 @@ p {
 
 /* Navbar */
 #navbar {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -117,9 +118,9 @@ p {
 .navbar__toggle-btn {
 	position: absolute;
 	right: 32px;
-	top: 24px;
 	font-size: 24px;
 	color: var(--color-white);
+	top: 30px;
 	display: none;
 }
 /* Home */

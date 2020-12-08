@@ -117,9 +117,9 @@ p {
 .navbar__toggle-btn {
 	position: absolute;
 	right: 32px;
-	top: 24px;
 	font-size: 24px;
 	color: var(--color-white);
+	top: 38px;
 	display: none;
 }
 /* Home */
@@ -412,8 +412,5 @@ p {
 	}
 	.navbar__menu {
 		flex-direction: column;
-		text-align: center;
-		width: 100%;
-		display: none;
 	}
 }
