@@ -412,7 +412,7 @@ p {
 	margin: 24px 0;
 }
 .contact__links i {
-	transition: all calc(var(--animation-duration) / 2) ease-in;
+	transition: all var(calc(--animation-duration/2)) ease-in;
 }
 .contact__links i:hover {
 	transform: scale(1.2);

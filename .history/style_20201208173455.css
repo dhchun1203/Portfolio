@@ -411,10 +411,7 @@ p {
 	font-size: var(--font-large);
 	margin: 24px 0;
 }
-.contact__links i {
-	transition: all calc(var(--animation-duration) / 2) ease-in;
-}
 .contact__links i:hover {
 	transform: scale(1.2);
-	color: var(--color-yellow);
+	transition: all var(--animation-duration) ease-in;
 }

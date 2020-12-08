@@ -69,7 +69,7 @@ h1 {
 }
 
 h2 {
-	font-size: var(--font-medium);
+	font-size: var(--font-regular);
 	font-weight: var(--weight-semi-bold);
 	color: var(--color-black);
 	margin: 8px 0;
@@ -406,15 +406,4 @@ p {
 
 .contact__title {
 	margin: 32px 0;
-}
-.contact__links {
-	font-size: var(--font-large);
-	margin: 24px 0;
-}
-.contact__links i {
-	transition: all calc(var(--animation-duration) / 2) ease-in;
-}
-.contact__links i:hover {
-	transform: scale(1.2);
-	color: var(--color-yellow);
 }
