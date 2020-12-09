@@ -13,7 +13,6 @@
 	--color-yellow: #fff7d1;
 	--color-orange: #feb546;
 	--color-black: #000000;
-	--color-navbar: #084ac4;
 
 	/* Font size */
 	--font-large: 48px;
@@ -96,10 +95,9 @@ p {
 	background-color: transparent;
 	color: var(--color-white);
 	padding: 16px;
-	transition: all var(--animation-duration) ease-in-out;
 }
 #navbar.navbar--dark {
-	background-color: var(--color-navbar);
+	background-color: var(--color-blue);
 	padding: 8px;
 }
 .navbar__menu {
