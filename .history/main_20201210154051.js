@@ -25,10 +25,11 @@ homeContactBtn.addEventListener("click", (event) => {
 	scrollIntoView("#contact");
 });
 // Make home sloly fade to transparent ad the window scrollss down
-const home = document.querySelector(".home__container");
-const homeHeight = home.getBoundingClientRect().height;
+const home = document.querySelector("#home");
 document.addEventListener("scroll", () => {
-	home.style.opacity = 1 - window.scrollY / homeHeight;
+	if (window.scrollY > homeScroll.clientHeight / 2) {
+		homeScroll.classList.add = "home__transparant";
+	}
 });
 
 function scrollIntoView(selector) {

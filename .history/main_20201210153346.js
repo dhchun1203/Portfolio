@@ -24,14 +24,13 @@ const homeContactBtn = document.querySelector(".home__contact");
 homeContactBtn.addEventListener("click", (event) => {
 	scrollIntoView("#contact");
 });
-// Make home sloly fade to transparent ad the window scrollss down
-const home = document.querySelector(".home__container");
-const homeHeight = home.getBoundingClientRect().height;
-document.addEventListener("scroll", () => {
-	home.style.opacity = 1 - window.scrollY / homeHeight;
-});
 
 function scrollIntoView(selector) {
 	const scrollTo = document.querySelector(selector);
 	scrollTo.scrollIntoView({ behavior: "smooth" });
 }
+
+const homeScroll = document.querySelector("#home");
+document.addEventListener("scroll", () => {
+	homeScroll.classList.add = "home__transparant";
+});

@@ -138,8 +138,11 @@ p {
 	padding: 40px;
 	padding-top: 120px;
 	text-align: center;
+	transition: all var(--animation-duration);
 }
-
+#home.home__transparant {
+	opacity: 0.2;
+}
 .home__avatar {
 	width: 200px;
 	height: 250px;
