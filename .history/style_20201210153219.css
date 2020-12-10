@@ -138,8 +138,8 @@ p {
 	padding: 40px;
 	padding-top: 120px;
 	text-align: center;
+	transition: all var(--animation-duration) ease-in-out;
 }
-
 .home__avatar {
 	width: 200px;
 	height: 250px;
