@@ -24,7 +24,11 @@ const homeContactBtn = document.querySelector(".home__contact");
 homeContactBtn.addEventListener("click", (event) => {
 	scrollIntoView("#contact");
 });
+<<<<<<< HEAD
 // Make home slowly fade to transparent ad the window scrollss down
+=======
+// Make home sloly fade to transparent ad the window scrollss down
+>>>>>>> ff5936ac75d96cb8a016dc1ca6ab30f167be302e
 const home = document.querySelector(".home__container");
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
