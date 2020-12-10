@@ -17,6 +17,7 @@ navbarMenu.addEventListener("click", (event) => {
 	if (link == null) {
 		return;
 	}
+
 	scrollIntoView(link);
 });
 // Handle click on "contact me" button on home

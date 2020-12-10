@@ -101,7 +101,7 @@ p {
 }
 #navbar.navbar--dark {
 	background-color: var(--color-navbar);
-	opacity: 0.85;
+	opacity: 0.8;
 	padding: 8px;
 }
 .navbar__menu {
