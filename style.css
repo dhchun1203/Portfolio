@@ -413,6 +413,23 @@ p {
 	transform: scale(1.2);
 	color: var(--color-yellow);
 }
+/* Scroll */
+.arrow-up {
+	position: fixed;
+	z-index: 1;
+	top: 90vh;
+	left: 94vw;
+	transition: all var(--animation-duration) ease;
+	font-size: 50px;
+	color: var(--color-navbar);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 300ms ease-in;
+}
+.arrow-up.visible {
+	opacity: 1;
+	pointer-events: auto;
+}
 
 @media screen and (max-width: 768px) {
 	.navbar__toggle-btn {
