@@ -19,6 +19,7 @@ navbarMenu.addEventListener("click", (event) => {
 		return;
 	}
 	navbarMenu.classList.remove("open");
+	navbarMenu.firstElementChild.classList.remove("open");
 	scrollIntoView(link);
 });
 
@@ -26,6 +27,7 @@ navbarMenu.addEventListener("click", (event) => {
 const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
 navbarToggleBtn.addEventListener("click", () => {
 	navbarMenu.classList.toggle("open");
+	navbarMenu.firstElementChild.classList.toggle("open");
 });
 
 // Handle click on "contact me" button on home
