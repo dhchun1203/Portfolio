@@ -105,7 +105,7 @@ p {
 	padding: 8px;
 }
 #navbar.navbar--dark .navbar__toggle-btn {
-	top: 14px;
+	top: 10px;
 }
 .navbar__toggle-btn {
 	position: absolute;
@@ -127,8 +127,10 @@ p {
 	padding: 8px 12px;
 	margin: 0 4px;
 	cursor: pointer;
-	border: 1px solid transparent;
 	border-radius: var(--size-border-radius);
+}
+.navbar__menu__item.active {
+	border: 1px solid var(--color-white);
 }
 .navbar__menu__item:hover {
 	border-color: var(--color-white);
