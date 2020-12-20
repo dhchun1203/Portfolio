@@ -1,5 +1,5 @@
 "use strict";
-// Make navbar transparent when it is on the top
+// Make navbar transparent when scrolling
 const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
@@ -60,6 +60,8 @@ arrowUp.addEventListener("click", () => {
 });
 
 // Projects
+// 1. 클릭한 category__btn 에 selected 스타일을 적용하고 이전에 선택되어 있던 selected 스타일은 제거
+// 2. 클릭한 category__btn의 data-filter와 일치하는 project 들을 filtering 및 display
 const workBtnContainer = document.querySelector(".work__categories");
 const projectContainer = document.querySelector(".work__projects");
 const projects = document.querySelectorAll(".project");
@@ -69,7 +71,7 @@ workBtnContainer.addEventListener("click", (event) => {
 	if (filter == null) {
 		return;
 	}
-	// Remove selection from the prenious item and select the new one
+	// Remove selection from the previous item and select the new one
 	const active = document.querySelector(".category__btn.selected");
 	if (active == null) return;
 	active.classList.remove("selected");
@@ -118,7 +120,7 @@ function selectNavItem(selected) {
 	selectedNavItem.classList.add("active");
 }
 const observerOptions = {
-	root: null,
+	root: null, // 교차 기준을 viewport로 설정
 	rootMargin: "0px",
 	threshold: 0.3,
 };
@@ -150,7 +152,6 @@ window.addEventListener("wheel", () => {
 	) {
 		selectedNavIndex = navItems.length - 1;
 	}
-	// 그 외 위치에 있을때
 	selectNavItem(navItems[selectedNavIndex]);
 });
 
