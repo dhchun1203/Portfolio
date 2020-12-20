@@ -21,6 +21,7 @@ navbarMenu.addEventListener("click", (event) => {
 	navbarMenu.classList.remove("open");
 	navbarMenu.firstElementChild.classList.remove("open");
 	scrollIntoView(link);
+	selectNavItem(target);
 });
 
 // Navbar toggle button for small screen
@@ -93,3 +94,64 @@ function scrollIntoView(selector) {
 	const scrollTo = document.querySelector(selector);
 	scrollTo.scrollIntoView({ behavior: "smooth" });
 }
+
+// 1. 모든 섹션 요소들과 메뉴 아이템들을 가지고 온다
+// 2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다.
+// 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다.
+const sectionIds = [
+	"#home",
+	"#about",
+	"#skills",
+	"#work",
+	"#testimonials",
+	"#contact",
+];
+const sections = sectionIds.map((id) => document.querySelector(id));
+const navItems = sectionIds.map((id) =>
+	document.querySelector(`[data-link="${id}"]`)
+);
+let selectedNavIndex = 0;
+let selectedNavItem = navItems[0];
+function selectNavItem(selected) {
+	selectedNavItem.classList.remove("active");
+	selectedNavItem = selected;
+	selectedNavItem.classList.add("active");
+}
+const observerOptions = {
+	root: null,
+	rootMargin: "0px",
+	threshold: 0.3,
+};
+const observerCallback = (entries, observer) => {
+	entries.forEach((entry) => {
+		if (!entry.isIntersecting && entry.intersectionRatio > 0) {
+			const index = sectionIds.indexOf(`#${entry.target.id}`);
+			// 스크롤링이 아래로 되어서 페이지가 올라옴
+			if (entry.boundingClientRect.y < 0) {
+				selectedNavIndex = index + 1;
+			} else {
+				selectedNavIndex = index - 1;
+			}
+		}
+	});
+};
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+sections.forEach((section) => observer.observe(section));
+
+window.addEventListener("wheel", () => {
+	// wheel 이벤트는 사용자가 직접 손으로 스크롤을 할 때만 동작하는 이벤트
+	if (window.scrollY === 0) {
+		// 화면이 제일 위에 있을 때
+		selectedNavIndex = 0;
+	} else if (
+		// 화면이 제일 아래에 있을 때
+		Math.round(window.scrollY + window.innerHeight) >=
+		document.body.clientHeight
+	) {
+		selectedNavIndex = navItems.length - 1;
+	}
+	// 그 외 위치에 있을때
+	selectNavItem(navItems[selectedNavIndex]);
+});
+
+// 지금 이 코드는 for 루프를 돌지도 않고 getboundingRect() 를 사용하지도 않은 최적화된 코드
