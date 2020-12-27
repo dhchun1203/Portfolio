@@ -95,7 +95,7 @@ p {
 	align-items: center;
 	background-color: transparent;
 	color: var(--color-white);
-	padding: 16px;
+	padding: 8px;
 	transition: all var(--animation-duration) ease-in-out;
 	z-index: 1;
 }
@@ -134,7 +134,7 @@ p {
 }
 .navbar__menu__item:hover {
 	border-color: var(--color-white);
-	background-color: var(--color-dark-pink);
+	background-color: var(--color-orange);
 }
 /* Home */
 #home {
@@ -170,7 +170,7 @@ p {
 /* Section common */
 .section {
 	text-align: center;
-	padding: 50px;
+	padding: 90px;
 	margin: auto;
 }
 .section__container {
@@ -289,13 +289,13 @@ p {
 }
 .category__btn.selected,
 .category__btn:hover {
-	background-color: var(--color-pink);
+	background-color: var(--color-blue);
 	color: var(--color-white);
 }
 .category__btn.selected .category__count,
 .category__btn:hover .category__count {
 	opacity: 1;
-	top: 5px;
+	top: 6px;
 }
 .category__count {
 	background-color: var(--color-orange);
@@ -409,7 +409,7 @@ p {
 
 /* Contact */
 #contact {
-	background-color: var(--color-pink);
+	background-color: var(--color-blue);
 }
 .contact__title,
 .contact__email,
@@ -438,7 +438,7 @@ p {
 	right: 20px;
 	transition: all var(--animation-duration) ease;
 	font-size: 50px;
-	color: var(--color-navbar);
+	color: var(--color-orange);
 	opacity: 0;
 	pointer-events: none;
 	transition: opacity 300ms ease-in;
@@ -459,7 +459,7 @@ p {
 	}
 	.navbar__toggle-btn {
 		display: block;
-		top: 16px;
+		top: 10px;
 		right: 16px;
 		font-size: var(--font-medium);
 	}
