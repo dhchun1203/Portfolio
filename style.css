@@ -10,6 +10,7 @@
 	--color-grey: #616161;
 	--color-light-grey: #7c7979;
 	--color-blue: #73aace;
+	--color-dark-blue: #3b6dcd;
 	--color-yellow: #fff7d1;
 	--color-orange: #feb546;
 	--color-black: #000000;
@@ -409,7 +410,7 @@ p {
 
 /* Contact */
 #contact {
-	background-color: var(--color-blue);
+	background-color: var(--color-dark-blue);
 }
 .contact__title,
 .contact__email,

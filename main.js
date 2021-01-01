@@ -60,14 +60,20 @@ arrowUp.addEventListener("click", () => {
 });
 
 // Projects
-// 1. 클릭한 category__btn 에 selected 스타일을 적용하고 이전에 선택되어 있던 selected 스타일은 제거
-// 2. 클릭한 category__btn의 data-filter와 일치하는 project 들을 filtering 및 display
+/*
+1. 클릭한 category__btn 에 selected 스타일을 적용하고 이전에 선택되어 있던 
+   selected 스타일은 제거
+2. 클릭한 category__btn의 data-filter와 일치하는 project 들을 filtering 
+   및 display
+*/
 const workBtnContainer = document.querySelector(".work__categories");
 const projectContainer = document.querySelector(".work__projects");
 const projects = document.querySelectorAll(".project");
 workBtnContainer.addEventListener("click", (event) => {
+	// category__count를 클릭했을 경우도 생각
 	const filter =
 		event.target.dataset.filter || event.target.parentNode.dataset.filter;
+	// break point 를 위로 올려 성능을 향상
 	if (filter == null) {
 		return;
 	}
@@ -80,6 +86,10 @@ workBtnContainer.addEventListener("click", (event) => {
 	target.classList.add("selected");
 
 	projectContainer.classList.add("anim-out");
+	/*
+	비동기적으로 시간차를 두어 filter와 display를 실행하여 위의 anim-out이 
+	정상적으로 동작하게 함
+	*/
 	setTimeout(() => {
 		projects.forEach((project) => {
 			if (filter === "*" || filter === project.dataset.type) {
@@ -94,7 +104,7 @@ workBtnContainer.addEventListener("click", (event) => {
 
 // 1. 모든 섹션 요소들과 메뉴 아이템들을 가지고 온다
 // 2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다.
-// 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다.
+// 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화(active) 시킨다.
 const sectionIds = [
 	"#home",
 	"#about",
@@ -120,7 +130,8 @@ function scrollIntoView(selector) {
 	selectNavItem(navItems[sectionIds.indexOf(selector)]);
 }
 const observerOptions = {
-	root: null, // 교차 기준을 viewport로 설정
+	// 교차 기준을 viewport로 설정
+	root: null,
 	rootMargin: "0px",
 	threshold: 0.3,
 };
