@@ -35,9 +35,9 @@
           <li class="navbar__menu__item" data-link="#about">About</li>
           <li class="navbar__menu__item" data-link="#skills">Skills</li>
           <li class="navbar__menu__item" data-link="#work">My work</li>
-          <li class="navbar__menu__item" data-link="#testimonials">
+          <!-- <li class="navbar__menu__item" data-link="#testimonials">
             Testimonials
-          </li>
+          </li> -->
           <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
       </div>
@@ -51,11 +51,11 @@
       <div class="home__container">
         <img class="home__avatar" src="imgs/profile.jpg" alt="profile" />
 
-        <h1 class="home__title">Hello, <br />Let me introduce myself!</h1>
+        <h1 class="home__title">안녕하세요, <br />전대환 입니다.</h1>
 
         <h2 class="home__description">
-          I dream of becoming a front-end developer, and I'm always ready to
-          develop.
+          지난 코드를 반성하고 더 좋은 다음 코드를 만들기 위해 노력하는
+          프론트엔드 개발자가 되고 싶습니다.
         </h2>
         <button class="home__contact" data-link="#contact">CONTACT ME</button>
       </div>
@@ -64,15 +64,14 @@
     <section id="about" class="section section__container">
       <h1>About me</h1>
       <p>
-        자기소개 Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry. Lorem Ipsum has been the industry's standard dummy
-        text ever since the 1500s, when an unknown printer took a galley of type
-        and scrambled it to make a type specimen book. It has survived not only
-        five centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+        차세대 융합 콘텐츠 산업협회에서 주관하는 빅데이터 및 인공지능을 활용한
+        데이터사이언티스트 양성과정 국비지원 교육을 이수하며 프로그래밍에
+        입문하였으며, 이후 프론트엔트로 진로를 설정하여 html, css, JavaScript,
+        React, TypeScript, node.js를 독학으로 학습했습니다. 코드를 공부하며
+        리팩토링이라는 개념을 알게되고 보다 이해하기 좋은 코드, 수정하기 용이한
+        좋은 코드를 만드는 것을 동경하고 지향하도록 노력하고 있습니다. 항상
+        부족함에 좌절하지 않고 인정하며 오늘의 나를 돌아보고 더 나은 내일의 나를
+        만들어가기 위해 노력하는 개발자가 되겠습니다.
       </p>
       <div class="about__majors">
         <div class="major">
@@ -133,19 +132,19 @@
             <div class="skill">
               <div class="skill__description">
                 <span>HTML</span>
-                <span>99%</span>
+                <span>90%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 99%"></div>
+                <div class="skill__value" style="width: 90%"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span>CSS</span>
-                <span>80%</span>
+                <span>85%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 80%"></div>
+                <div class="skill__value" style="width: 85%"></div>
               </div>
             </div>
             <div class="skill">
@@ -169,10 +168,19 @@
             <div class="skill">
               <div class="skill__description">
                 <span>React</span>
-                <span>80%</span>
+                <span>91%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 80%"></div>
+                <div class="skill__value" style="width: 91%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>node.js</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
               </div>
             </div>
           </div>
@@ -183,16 +191,18 @@
                 <li><span>Visual Studio Code</span></li>
                 <li><span>Eclipse</span></li>
                 <li><span>Team Foundation Server</span></li>
-                <li><span>etc..</span></li>
-                <li><span>etc..</span></li>
               </ul>
             </div>
             <div class="etc">
               <h3 class="skillset__title">Etc</h3>
               <ul class="etc__list">
                 <li><span>Git</span></li>
+                <li><span>Git-Hub</span></li>
                 <li><span>Slack</span></li>
-                <li><span>etc..</span></li>
+                <li><span>Postman</span></li>
+                <li><span>Storybook</span></li>
+                <li><span>Notion</span></li>
+                <li><span>Figma</span></li>
               </ul>
             </div>
           </div>
@@ -297,74 +307,143 @@
             </div>
           </a>
           <a
-            href="https://github.com/dhchun1203/DreamCoding_youtube-project"
+            href="https://github.com/dhchun1203/news_viewer_react"
+            class="project"
+            data-type="front-end"
+            target="blank"
+          >
+            <img
+              src="imgs/projects/new_viewer_thumbnail.png"
+              alt="news viewer project thumbnail"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>News Viewer React Project</h3>
+              <span
+                >newsapi.org API를 활용하여 뉴스 테이터를 axios를 통해 받아와
+                렌더링해주는 프로젝트입니다.(!!현재 newsapi.org의 정책이
+                변경되어 더이상 서버에서 들어오는 request를 무료로 받지
+                않습니다.)</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://github.com/dhchun1203/React-TodoList-Project"
+            class="project"
+            data-type="front-end"
+            target="blank"
+          >
+            <img
+              src="imgs/projects/todoList_thumbnail.png"
+              alt="todo list project thumbnail"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>TodoList React Project</h3>
+              <span
+                >리액트 프레임워크를 사용하여 간단한 Todo List를 만들어
+                봤습니다. 상태관리는 Redux를 통해 관리하였으며 많은 데이터가
+                들어왔을때 발생하는 랜더링 성능 저하를 해결하기 위해
+                useCallback, React.memo 등의 리액트 훅을 활용하여 최적화를
+                실습해본 프로젝트입니다.</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://github.com/dhchun1203/React-Movie-App"
+            class="project"
+            data-type="front-end"
+            target="blank"
+          >
+            <img
+              src="imgs/projects/Movie_app_thumbnail.png"
+              alt="Movie app project thumbnail"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>Movie app React Project</h3>
+              <span
+                >리액트 프레임워크를 사용하여 영화 평론 리스트를 만들었습니다.
+                영화 데이터를 axios를 활용하여 받아와 State로 등록하여
+                컴포넌트로 랜더링 하는 간단한 리스트를 만들어 보았습니다.</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://github.com/dhchun1203/Motion-app"
+            class="project"
+            data-type="front-end"
+            target="blank"
+          >
+            <img
+              src="imgs/projects/Motion_thumbnail.png"
+              alt="Motion project thumbnail"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>Motion project JavaScript, TypeScript</h3>
+              <span
+                >Notion 앱에서 영감을 받아 이미지, 동영상, 노트, 할일 목록을
+                리스트 형태로 업로드할 수 있는 웹 애플리케이션을 만들어
+                보았습니다. vanila JavaScript를 기반으로 TypeScript를 적용하여
+                타입스크립트의 장점인 빠른 오류 체크, 빠른 실행 속도를 체감할 수
+                있는 프로젝트였습니다.</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://github.com/ReactPortfolioTeam/shoppingMall-react-project"
+            class="project"
+            data-type="front-end"
+            target="blank"
+          >
+            <img
+              src="imgs/projects/shoppingMall_react_thumbnail.png"
+              alt="Shopping mall project thumbnail"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>
+                Shopping Mall clone coding Team Frontend Project React,
+                TypeScript
+              </h3>
+              <span
+                >3sixteen 의류 쇼핑몰 사이트를 클론 코딩하여 UI 구성, API 설계,
+                DB 구축 등 프론트와 백으로 업무를 분담하여 작업을 진행했으며 제
+                업무는 프론트업무와 백엔드에서는 Node JS를 기반으로 API
+                설계업무를 담당했습니다. 프론트단 기술 스택은 CRA(Create React
+                App)와 함께 TypeScript를 적용하였으며 상태관리는 Recoil 상태관리
+                라이브러리를 활용하여 관리했습니다.</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://github.com/ReactPortfolioTeam/shoppingMall-backend-nodeJS"
             class="project"
             data-type="back-end"
             target="blank"
           >
             <img
-              src="imgs/projects/project5.png"
-              alt="youtube project thumbnail"
+              src="imgs/projects/shopping_mall_react_back_thumbnail.png"
+              alt="Shopping mall backend thumbnail"
               class="project__img"
             />
             <div class="project__description">
-              <h3>Project5</h3>
-              <span>Fill in your own project</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/dhchun1203/DreamCoding_youtube-project"
-            class="project"
-            data-type="mobile"
-            target="blank"
-          >
-            <img
-              src="imgs/projects/project6.png"
-              alt="youtube project thumbnail"
-              class="project__img"
-            />
-            <div class="project__description">
-              <h3>Project6</h3>
-              <span>Fill in your own project</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/dhchun1203/DreamCoding_youtube-project"
-            class="project"
-            data-type="mobile"
-            target="blank"
-          >
-            <img
-              src="imgs/projects/project7.png"
-              alt="youtube project thumbnail"
-              class="project__img"
-            />
-            <div class="project__description">
-              <h3>Project7</h3>
-              <span>Fill in your own project</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/dhchun1203/DreamCoding_youtube-project"
-            class="project"
-            data-type="mobile"
-            target="blank"
-          >
-            <img
-              src="imgs/projects/project8.png"
-              alt="youtube project thumbnail"
-              class="project__img"
-            />
-            <div class="project__description">
-              <h3>Project8</h3>
-              <span>Fill in your own project</span>
+              <h3>Shopping Mall clone coding Team Backend Project node.js</h3>
+              <span
+                >spring boot로 구축한 DB를 node.js에
+                MVC(Model-View-Controler)패턴으로 구성하였고, node.js
+                프레임워크는 Koa를 사용했습니다. 로그인, 로그아웃, 회원가입,
+                회원정보 조회 및 변경 api를 설계하였으며 서버 배포는 Heroku를
+                사용했습니다.
+              </span>
             </div>
           </a>
         </div>
       </div>
     </section>
     <!-- Testimonials -->
-    <section id="testimonials" class="section">
+    <!-- <section id="testimonials" class="section">
       <div class="section__container">
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
@@ -405,7 +484,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Contact -->
     <section id="contact" class="section">
       <h1 class="contact__title">Let's talk</h1>
@@ -420,6 +499,7 @@
         >
           <i class="fab fa-facebook"></i>
         </a>
+        <a href="https://metahwan.notion.site" target="blank"> 노션 </a>
       </div>
       <p class="contact__rights">
         2020 Dream Coding Hwan - All rights reserved
