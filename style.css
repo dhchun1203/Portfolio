@@ -155,6 +155,9 @@ p {
 .home__description {
   color: var(--color-white);
 }
+.home__title strong {
+  color: var(--color-orange);
+}
 .home__contact {
   color: var(--color-white);
   font-size: var(--font-regular);
